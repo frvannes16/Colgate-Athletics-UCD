@@ -56,9 +56,14 @@ h1 {
     margin: auto;
     height: 100%;
     width: 90%;
-    border-color: white;
     border-radius: 5px;
+    border: 4px solid white;
 }
+
+.roster img{
+    height: 113px;
+}
+
 @keyframes fade {
     from { opacity: 1.0; }
     50% { opacity: 0.4; }

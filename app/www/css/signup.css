@@ -58,16 +58,50 @@ body {
 #gateLogo{
   z-index: 1;
   position: absolute;
-  left: 15%;
+  left: 17%;
 }
 
-#colgateLogIn{
-  background-color: ##862633;
-  padding: 15px 15px;
+#facebookLogIn{
+  background-color: blue;
   text-align: center;
   font-size: 18px;
   color: white;
-  width: 50%:
-  height: 50%;
-  top: 50%;
+  width: 200px;
+  height:40px;
+  top:63%;
+  bottom:10%;
+  position:relative;
+  border:none;
+  padding-left:35px;
+  font-family:roboto;
+}
+
+#googleLogIn{
+  background-color: orange;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  width: 200px;
+  height:40px;
+  top:65%;
+  bottom:10%;
+  position:relative;
+  border:none;
+  padding-left:35px;
+  font-family:roboto;
+}
+
+#colgateLogIn{
+  background-color: #862633;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  width: 200px;
+  height:40px;
+  top:68%;
+  bottom:10%;
+  position:relative;
+  border:none;
+  padding-left:35px;
+  font-family:roboto;
 }
