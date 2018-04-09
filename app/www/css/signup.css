@@ -16,9 +16,6 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-
-@import url('https://fonts.googleapis.com/css?family=Graduate');
-@import url('https://fonts.googleapis.com/css?family=Amiri');
 * {
     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
@@ -27,27 +24,50 @@ body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background: #333333;
+    background-color:#E4E4E4;
     background-attachment:fixed;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:12px;
     height:100%;
     margin:0px;
     padding:0px;
+    text-transform:uppercase;
     width:100%;
 }
 
-.header {
-  background: #862633;
-  height: auto;
-  position: sticky;
+/* Portrait layout (default) */
+.app {
+    background:url(../img/action_pichome_pic.png) no-repeat center top; /* 170px x 200px */
+    position: absolute;
+    z-index: 0;             /* position in the center of the screen */
+    height:100%;                   /* text area height */
+    width:100%;                   /* text area width */
+    text-align:center;
 }
 
-.header h1 {
-  font-family:'Graduate';
-  font-size: 22px;
+/* Landscape layout (with min-width) */
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    .app {
+        background-position:left center;
+        padding:75px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height */
+        margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
+                                      /* offset horizontal: half of image width and text area width */
+    }
+}
+
+#gateLogo{
+  z-index: 1;
+  position: absolute;
+  left: 15%;
+}
+
+#colgateLogIn{
+  background-color: ##862633;
+  padding: 15px 15px;
   text-align: center;
-  padding: 10px 10px;
-  margin: 0px;
-  color: #FFFFFF;
-  background:#800000;
+  font-size: 18px;
+  color: white;
+  width: 50%:
+  height: 50%;
+  top: 50%;
 }
