@@ -27,12 +27,6 @@ h1 {
     color: #FFFFFF;
 }
 
-.header {
-    height: 50px;
-    width:auto;
-    background: #862633;
-}
-
 .roster {
     display: block;
     background :#E0E0E0;
