@@ -39,15 +39,15 @@
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
 
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/signup.css" />
+    <link rel="stylesheet" type="text/css" href="css/login.css" />
     <title>Hello World</title>
 </head>
 
 <body>
     <div class="app">
-      <a id="facebookLogIn" href="https://www.facebook.com"> <img src="img/FacebookLogin.png" alt="Facebook Login"> </a>
-      <a id="googleLogIn" href="https://www.gmail.com"> <img src="img/GoogleLogin.png" alt="Google Login"> </a>
-      <button id="colgateLogIn" onclick="window.location.href='login.html'"> <img src="img/ColgateC.png" alt="Colgate C"> Sign in with Colgate</button>
+      <input id="emailBox" type="text" name="Email" placeholder="Email">
+      <input id="passwordBox" type="password" name="Password" placeholder="Password">
+      <button id="LogIn" onclick="window.location.href='main_screen.html'"> Log In </button>
     </div>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
