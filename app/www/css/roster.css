@@ -36,6 +36,7 @@ h3 {
 }
 
 span {
+    margin-right: 7px;
     font-family: "Roboto", arial, sans-serif;;
     vertical-align: middle;
     background-color: #862633;
@@ -50,8 +51,8 @@ span {
     margin:10px auto;
     height: 100%;
     width: 90%;
-    border-radius: 5px;
-    border: 4px solid white;
+    border-radius: 10px;
+    border: 5px solid white;
 }
 .roster img{
     height: 113px;
