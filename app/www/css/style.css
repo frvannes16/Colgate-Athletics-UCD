@@ -116,13 +116,31 @@ and https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_dropdow
 
 .box {
   border: 5px #FFFFFF solid;
-  border-radius: 5px;
+  border-radius: 10px;
+  margin: 10px 10px;
   background: #E5E3E3;
+}
+
+.maroon-box {
+  border: 5px #FFFFFF solid;
+  border-radius: 10px;
+  margin: 10px 10px;
+  background: #862633;
+}
+
+.section-title {
+  font-family: 'Graduate', sans-serif;
+  color: #FFFFFF;
+  font-size: 16pt;
+  text-align: center;
 }
 
 .scoreboard {
   display: grid;
-  margin: 10px 10px;
+<<<<<<< HEAD
+  margin: 10px 20px;
+=======
+>>>>>>> ff5f054f1fdd7d6e051612867b2685e778beb5ee
   grid-template-columns: auto auto auto;
   grid-template-rows: auto;
 }
@@ -146,4 +164,20 @@ and https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_dropdow
 .scoreboard img {
   width: 25vw;
   margin: 5px auto;
+}
+
+.article-snippet {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 20px;
+}
+
+.article-snippet img {
+  width: 20vw;
+  margin: 10px;
+}
+
+.article-snippet h2 {
+  color: white;
+  padding: 10px;
 }
