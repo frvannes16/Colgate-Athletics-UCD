@@ -27,7 +27,6 @@ h1 {
     color: #FFFFFF;
 }
 
-
 .header {
     height: 50px;
     width:auto;
@@ -35,6 +34,7 @@ h1 {
 }
 
 .roster {
+    display: block;
     background :#E0E0E0;
     margin: auto;
     height: 100%;
@@ -42,19 +42,14 @@ h1 {
     border-radius: 5px;
     border: 4px solid white;
 }
-
 .roster img{
     height: 113px;
 }
 
-@keyframes fade {
-    from { opacity: 1.0; }
-    50% { opacity: 0.4; }
-    to { opacity: 1.0; }
+#photo {
+    display: inline;
 }
 
-@-webkit-keyframes fade {
-    from { opacity: 1.0; }
-    50% { opacity: 0.4; }
-    to { opacity: 1.0; }
+#info {
+    display: inline;
 }
