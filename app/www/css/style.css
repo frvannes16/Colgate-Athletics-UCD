@@ -29,6 +29,11 @@ body {
    vertical-align: middle;
  }
 
+ .fa-caret-down {
+   float: right;
+   padding-right: 8px;
+ }
+
  .header h1 {
    font-family:'Graduate';
    font-size: 18px;
@@ -41,20 +46,12 @@ body {
 
  }
 
-div.menu {
-    width: 30px;
-    height: 3px;
-    background-color: white;
-    vertical-align: middle;
-    margin: 6px 0;
-}
-
 .hamburger {
   float: left;
 }
 
-
-/* Below from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav*/
+/* Below from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav
+and https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_dropdown */
 .sidenav {
     height: 100%;
     width: 0;
@@ -68,17 +65,39 @@ div.menu {
     padding-top: 60px;
 }
 
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
+.sidenav a, .dropdown-btn {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  text-align: left;
+  transition: 0.3s;
+  cursor: pointer;
+  outline: none;
+  font-family: "Amiri";
 }
 
-.sidenav a:hover {
+.sidenav a:hover, .dropdown-btn:hover {
     color: #f1f1f1;
+}
+
+.active {
+    background-color: gray;
+    color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+}
+
+.dropdown-btn{
+  width: 100%;
 }
 
 .sidenav .closebtn {
@@ -93,6 +112,7 @@ div.menu {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
 
 .box {
   border: 5px #FFFFFF solid;
