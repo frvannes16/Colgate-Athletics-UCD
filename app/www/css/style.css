@@ -11,7 +11,7 @@ body {
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
     background: #333333;
     background-attachment:fixed;
-    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-family:'Amiri', sans-serif;
     font-size:12px;
     height:100%;
     margin:0px;
@@ -31,7 +31,7 @@ body {
 
  .header h1 {
    font-family:'Graduate';
-   font-size: 130%;
+   font-size: 18px;
    text-align: center;
    padding: 10px 10px;
    margin: 0px;
@@ -51,4 +51,79 @@ div.menu {
 
 .hamburger {
   float: left;
+}
+
+
+/* Below from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.box {
+  border: 5px #FFFFFF solid;
+  border-radius: 5px;
+  background: #E5E3E3;
+}
+
+.scoreboard {
+  display: grid;
+  margin: 10px 10px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+}
+
+.scoreboard .stats {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.scoreboard .stats .score {
+  font-size: 20pt;
+  margin: 10px 0px;
+}
+
+.scoreboard .stats p {
+  margin: 0;
+}
+
+.scoreboard img {
+  width: 25vw;
+  margin: 5px auto;
 }
