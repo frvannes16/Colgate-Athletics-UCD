@@ -43,43 +43,53 @@
   left: 17%;
 }
 
-#facebookLogIn img{
-  width: 246px;
-  height:43px;
-  top:62%;
-  left:18%;
+#emailBox{
+  background-color: #FFFFFF;
+  text-align: left;
+  font-size: 18px;
+  color: #C4C4C4;
+  width: 205px;
+  height:33px;
+  top:64%;
+  left:20%;
   position:absolute;
+  border-width:5px;
+  border-color:#A6A6A6;
+  border-style:solid;
+  font-family:roboto;
   border-radius:10px;
+  padding-left: 10px;
 }
 
-#googleLogIn img{
-  width: 246px;
-  height:43px;
-  top:72%;
-  left:18%;
+#passwordBox{
+  background-color: #FFFFFF;
+  text-align: left;
+  font-size: 18px;
+  color: #C4C4C4;
+  width: 205px;
+  height:33px;
+  top:73%;
+  left:20%;
   position:absolute;
-  border:none;
+  border-width:5px;
+  border-color:#A6A6A6;
+  border-style:solid;
+  font-family:roboto;
   border-radius:10px;
+  padding-left: 10px;
 }
 
-#colgateLogIn{
+#LogIn{
   background-color: #862633;
   text-align: center;
   font-size: 18px;
   color: white;
-  width: 246px;
+  width: 225px;
   height:43px;
   top:82%;
-  left:18%;
+  left:20%;
   position:absolute;
   border:none;
-  padding-left:40px;
   font-family:roboto;
   border-radius:10px;
-}
-
-#colgateLogIn img {
-  position:absolute;
-  left:8%;
-  top:17%;
 }
