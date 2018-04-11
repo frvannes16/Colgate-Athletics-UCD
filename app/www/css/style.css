@@ -53,6 +53,7 @@ div.menu {
   float: left;
 }
 
+<<<<<<< HEAD
 
 /* Below from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav*/
 .sidenav {
@@ -92,4 +93,38 @@ div.menu {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+=======
+.box {
+  border: 5px #FFFFFF solid;
+  border-radius: 5px;
+  background: #E5E3E3;
+}
+
+.scoreboard {
+  display: grid;
+  margin: 10px 10px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+}
+
+.scoreboard .stats {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.scoreboard .stats .score {
+  font-size: 20pt;
+  margin: 10px 0px;
+}
+
+.scoreboard .stats p {
+  margin: 0;
+}
+
+.scoreboard img {
+  width: 25vw;
+  margin: 5px auto;
+>>>>>>> 4187210b26f46fb23d05e81e5d2f5baae305983d
 }
