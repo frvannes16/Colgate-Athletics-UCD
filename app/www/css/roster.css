@@ -35,7 +35,7 @@ h3 {
   font-family: "Amiri";
 }
 
-span {
+span.number  {
     margin-right: 7px;
     font-family: "Roboto", arial, sans-serif;;
     vertical-align: middle;
@@ -45,6 +45,7 @@ span {
     padding: 0 8px;
     font-style: italic;
 }
+
 .roster {
     display: block;
     background :#E0E0E0;
