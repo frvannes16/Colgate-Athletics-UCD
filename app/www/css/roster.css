@@ -27,10 +27,27 @@ h1 {
     color: #FFFFFF;
 }
 
+h2 {
+    font-family: "Graduate";
+}
+
+h3 {
+  font-family: "Amiri";
+}
+
+span {
+    font-family: "Roboto", arial, sans-serif;;
+    vertical-align: middle;
+    background-color: #862633;
+    color: white;
+    font-weight: bold;
+    padding: 0 8px;
+    font-style: italic;
+}
 .roster {
     display: block;
     background :#E0E0E0;
-    margin: auto;
+    margin:10px auto;
     height: 100%;
     width: 90%;
     border-radius: 5px;
@@ -40,10 +57,15 @@ h1 {
     height: 113px;
 }
 
-#photo {
-    display: inline;
+.photo {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px;
 }
 
-#info {
-    display: inline;
+.info {
+    text-align: center;
+    display: inline-block;
+    width: 265px;
+    vertical-align: middle;
 }

@@ -45,9 +45,9 @@
 
 <body>
     <div class="app">
-      <button id="facebookLogIn"> Login with Facebook</button>
-      <button id="googleLogIn"> Sign in with Google</button>
-      <button id="colgateLogIn"> Sign in with Colgate</button>
+      <a id="facebookLogIn" href="https://www.facebook.com"> <img src="img/FacebookLogin.png" alt="Facebook Login"> </a>
+      <a id="googleLogIn" href="https://www.gmail.com"> <img src="img/GoogleLogin.png" alt="Google Login"> </a>
+      <button id="colgateLogIn" onclick="window.location.href='main_screen.html'"> <img src="img/ColgateC.png" alt="Colgate C"> Sign in with Colgate</button>
     </div>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
@@ -55,19 +55,9 @@
         app.initialize();
     </script>
 
-    <div class="header">
-      <h1>
-      <div class = "hamburger">
-        <div class = "menu"></div>
-        <div class = "menu"></div>
-        <div class = "menu"></div>
-      </div>
-      Colgate <img class = "center" src="img/gate_logo2.png" alt="'gate logo" /> Athletics
-      </h1>
-    </div>
 
     <div id="gateLogo">
-      <img src="img/gate Logo.png" alt="Gate Logo">
+      <img src="img/gate_Logo.png" alt="Gate Logo">
     </div>
 
 </body>
