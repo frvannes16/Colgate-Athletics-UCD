@@ -60,21 +60,25 @@ body{
 
 }
 
-.header {
+/* .header {
       color: #FFFFFF;
       padding: 15px 15px 15px 15px;
       text-align: center;
       font-size: 30px;
       font-family: sans-serif;
-}
+} */
 
 .boxes {
-    border: 2px solid white;
-    border-radius: 5px;
-    width: 80%;
+    border: 5px solid white;
+    border-radius: 10px;
     text-align: center;
     margin: auto;
     background-color: #E0E0E0;
+    margin: 10px 20px;
+}
+
+.red{
+    background-color: #862633;
 }
 
 div.pics {
