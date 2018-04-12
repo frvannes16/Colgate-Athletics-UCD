@@ -23,6 +23,7 @@
 
 <head>
   <meta charset="utf-8" />
+
   <meta name="format-detection" content="telephone=no" />
   <meta name="msapplication-tap-highlight" content="no" />
   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
@@ -37,39 +38,17 @@
     -->
   <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/main.css" />
   <title>Main Screen</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(function(){
+      $("#importHeader").load("_header_template.html");
+    });
+  </script>
 </head>
 
 <body>
-
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times; </a>
-  <a href="main_screen.html">Home</a>
-  <a href="#">Athletic News</a>
-  <a href="#">Colgate Schedule</a>
-  <button class="dropdown-btn">Team List &#9662</button>
-  <div class="dropdown-container">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-  </div>
-  <a href="#">Notifications</a>
-  <a href="#">Manage Account</a>
-</div>
-
-  <div class="header">
-    <h1>
-    <span class = "hamburger" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-    Colgate <img class = "center" src="img/gate_logo2.png" alt="'gate logo" /> Athletics
-    </h1>
-  </div>
+   <div id="importHeader"></div>
 
     <div class="content">
 

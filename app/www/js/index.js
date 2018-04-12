@@ -50,10 +50,21 @@ var app = {
 
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("innerSidenav").style.width = "0";
 }
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("innerSidenav").style.width = "0";
+}
+
+function closeInnerNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("innerSidenav").style.width = "0";
+}
+
+function openInnerNav() {
+    document.getElementById("innerSidenav").style.width = "250px";
 }
 
 /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
