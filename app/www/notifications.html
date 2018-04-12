@@ -43,33 +43,55 @@
 </head>
 
 <body>
-
-  <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times; </a>
-    <a href="main_screen.html">Home</a>
-    <a href="#">Athletic News</a>
-    <a href="#">Colgate Schedule</a>
-    <button class="dropdown-btn">Team List &#9662</button>
-    <div class="dropdown-container">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
+  <!-- Header is contained in div below, I recommend keeping it collapsed. -->
+  <div>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times; </a>
+      <a href="main_screen.html">Home</a>
+      <a href="#">Athletic News</a>
+      <a href="#">Colgate Schedule</a>
+      <a href="javascript:void(0)" onclick="openInnerNav()">Team List &#9662;</a>
+      <div id="innerSidenav" class="sidenav">
+        <a href="javascript:void(0)" class="backbtn" onclick="closeInnerNav()"> &#x25c2; </a>
+        <button class="dropdown-btn">Women's Teams &#9662</button>
+        <div class="dropdown-container">
+          <a href="#">Basketball</a>
+          <a href="#">Cross Country</a>
+          <a href="#">Field Hockey</a>
+          <a href="#">Ice Hockey</a>
+          <a href="#">Lacrosse</a>
+          <a href="#">Rowing</a>
+          <a href="#">Soccer</a>
+          <a href="#">Softball</a>
+          <a href="#">Swimming & Diving</a>
+          <a href="#">Tennis</a>
+          <a href="#">Track & Field</a>
+          <a href="#">Volleyball</a>
+        </div>
+        <button class="dropdown-btn">Men's Teams &#9662</button>
+        <div class="dropdown-container">
+          <a href="#">Basketball</a>
+          <a href="#">Cross Country</a>
+          <a href="#">Football</a>
+          <a href="#">Golf</a>
+          <a href="#">Ice Hockey</a>
+          <a href="#">Lacrosse</a>
+          <a href="#">Rowing</a>
+          <a href="#">Soccer</a>
+          <a href="#">Swimming & Diving</a>
+          <a href="#">Tennis</a>
+          <a href="#">Track & Field</a>
+        </div>
+      </div>
+      <a href="#">Notifications</a>
+      <a href="#">Manage Account</a>
     </div>
-    <a href="#">Notifications</a>
-    <a href="#">Manage Account</a>
-  </div>
-
-  <div class="header">
-    <h1>
-    <span class = "hamburger" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-    Colgate <img class = "center" src="img/gate_logo2.png" alt="'gate logo"/> Athletics
-    </h1>
+    <div class="header">
+        <h1>
+          <span class = "hamburger" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+          Colgate <img class = "center" src="img/gate_logo2.png" alt="'gate logo" /> Athletics
+        </h1>
+    </div>
   </div>
 
   <div class="section-title">Notifications</div>
@@ -101,5 +123,12 @@
       <div class="description2"> Colgate Women's Lacrosse wins a thriller over Cornell 11 - 10 (2-OT) </div>
     </div>
   </div>
+
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript">
+    app.initialize();
+  </script>
+</body>
 
 </html>
