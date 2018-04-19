@@ -43,7 +43,6 @@ body {
    color: #FFFFFF;
    background: #800000;
    vertical-align: middle;
-
  }
 
 .hamburger {
@@ -191,4 +190,21 @@ and https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_dropdow
 .article-snippet h2 {
   color: white;
   padding: 10px;
+}
+
+.photo {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px;
+}
+
+.info {
+    text-align: center;
+    display: inline-block;
+    width: 60%;
+    vertical-align: middle;
+}
+
+.manage img {
+  height: 113px;
 }
