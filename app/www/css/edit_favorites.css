@@ -90,9 +90,10 @@
     padding-left: 30px;
 }
 
+.fa-star {
+  color: #555555;
+}
 
 .checked {
     color: #F2C94C;
-}
-
 }

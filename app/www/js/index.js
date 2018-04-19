@@ -48,6 +48,21 @@ var app = {
     }
 };
 
+function toggleFavorite() {
+  console.log("Toggling favorite");
+  this.getElementsByClassName('fa-star')[0].classList.toggle('checked');
+}
+
+// Loop through all stars on the page and assign the onClick listener
+var notificationSections = document.getElementsByClassName('notification_section');
+var description3s = document.getElementsByClassName('description3');
+for (var i = 0; i < notificationSections.length; i++) {
+  notificationSections[i].addEventListener("click", toggleFavorite);
+}
+for (var i = 0; i < description3s.length; i++) {
+  description3s[i].addEventListener("click", toggleFavorite);
+}
+
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
     document.getElementById("innerSidenav").style.width = "0";
@@ -69,9 +84,8 @@ function openInnerNav() {
 
 /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
 var dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
 
-for (i = 0; i < dropdown.length; i++) {
+for (var i = 0; i < dropdown.length; i++) {
   dropdown[i].addEventListener("click", function() {
     this.classList.toggle("active");
     var dropdownContent = this.nextElementSibling;
@@ -92,8 +106,7 @@ window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
 
     var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
+    for (var i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
       if (openDropdown.classList.contains('show')) {
         openDropdown.classList.remove('show');
