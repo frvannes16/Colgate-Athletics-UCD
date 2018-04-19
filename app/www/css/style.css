@@ -83,10 +83,6 @@ and https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_dropdow
     color: #f1f1f1;
 }
 
-.active {
-    background-color: gray;
-    color: white;
-}
 
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
 .dropdown-container {
