@@ -54,14 +54,11 @@ function toggleFavorite() {
 }
 
 // Loop through all stars on the page and assign the onClick listener
-var notificationSections = document.getElementsByClassName('notification_section');
-var description3s = document.getElementsByClassName('description3');
-for (var i = 0; i < notificationSections.length; i++) {
-  notificationSections[i].addEventListener("click", toggleFavorite);
+var favoritable = document.getElementsByClassName('can-favorite');
+for (var i = 0; i < favoritable.length; i++) {
+  favoritable[i].addEventListener("click", toggleFavorite);
 }
-for (var i = 0; i < description3s.length; i++) {
-  description3s[i].addEventListener("click", toggleFavorite);
-}
+
 
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
