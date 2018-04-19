@@ -61,19 +61,6 @@ span.number  {
     height: 113px;
 }
 
-.photo {
-    display: inline-block;
-    vertical-align: middle;
-    padding: 5px;
-}
-
-.info {
-    text-align: center;
-    display: inline-block;
-    width: 60%;
-    vertical-align: middle;
-}
-
 .dropbtn {
     background-color: #3498DB;
     color: white;
