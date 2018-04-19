@@ -46,11 +46,11 @@
   padding-top: 5px;
 }
 
-.larger_box{
+.larger_box2{
   border: 5px #FFFFFF solid;
   border-radius: 10px;
   margin: 10px 10px;
-  background:#C4C4C4;
+  background:#E0E0E0;
 }
 
 .smaller_box {
@@ -80,15 +80,19 @@
     color:#000000;
 }
 
-.description2{
+.description3{
     font-family:'Amiri';
-    font-size: 14px;
+    font-size: 18px;
     padding-top: 5px;
     padding-bottom: 5px;
     color:#000000;
-    text-align: center;
-    padding-left: 15px;
-    padding-right: 15px;
+    text-align: left;
+    padding-left: 30px;
+}
+
+
+.checked {
+    color: #F2C94C;
 }
 
 }
