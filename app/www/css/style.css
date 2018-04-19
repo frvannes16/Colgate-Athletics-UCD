@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Graduate');
 @import url('https://fonts.googleapis.com/css?family=Amiri');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
 * {
     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
@@ -203,4 +204,12 @@ and https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_dropdow
 
 .manage img {
   height: 113px;
+}
+
+.fa-star {
+  color: #555555;
+}
+
+.checked {
+    color: #F2C94C;
 }
