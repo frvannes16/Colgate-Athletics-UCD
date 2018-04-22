@@ -46,3 +46,16 @@
 .red{
   background-color: #862633;
 }
+
+.slider_article{
+  padding-top: 10px;
+  background-image: url("img/Basketball_article.png");
+}
+
+.slider_title{
+  color:white;
+  font-family:'Amiri';
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
