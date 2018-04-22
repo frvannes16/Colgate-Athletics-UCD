@@ -1,0 +1,50 @@
+.maroon-box h1 {
+  font-family: 'Graduate';
+  font-size: 18px;
+  padding: 10px 30px;
+  margin: 0px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.maroon-box img {
+  vertical-align: middle;
+  padding: 10px 10px;
+  margin: 0px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.description{
+    font-family:'Amiri';
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    color:#000000;
+}
+
+.edit {
+  display: inline-block;
+  float: right;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+.box-title {
+  font-family: 'Graduate', sans-serif;
+  color: black;
+  font-size: 14pt;
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 8px;
+}
+
+.manage maroon-box {
+  border: 5px #FFFFFF solid;
+  border-radius: 10px;
+  margin: 10px 20px;
+  background: #862633;
+  color: #FFFFFF;
+  overflow: hidden;
+}

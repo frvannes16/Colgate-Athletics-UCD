@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Graduate');
 @import url('https://fonts.googleapis.com/css?family=Amiri');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
 * {
     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
@@ -34,7 +35,7 @@ body {
    padding-right: 8px;
  }
 
- .header h1 {
+ .main-header h1 {
    font-family:'Graduate';
    font-size: 18px;
    text-align: center;
@@ -43,7 +44,6 @@ body {
    color: #FFFFFF;
    background: #800000;
    vertical-align: middle;
-
  }
 
 .hamburger {
@@ -84,10 +84,6 @@ and https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_dropdow
     color: #f1f1f1;
 }
 
-.active {
-    background-color: gray;
-    color: white;
-}
 
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
 .dropdown-container {
@@ -191,4 +187,29 @@ and https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_dropdow
 .article-snippet h2 {
   color: white;
   padding: 10px;
+}
+
+.photo {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px;
+}
+
+.info {
+    text-align: center;
+    display: inline-block;
+    width: 60%;
+    vertical-align: middle;
+}
+
+.manage img {
+  height: 113px;
+}
+
+.fa-star {
+  color: #555555;
+}
+
+.checked {
+    color: #F2C94C;
 }
