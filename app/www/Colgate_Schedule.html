@@ -44,8 +44,7 @@
 <body>
   <!-- Header is below, I recommend keeping it collapsed. -->
   <div>
-    <d
-    iv id="mySidenav" class="sidenav">
+    <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times; </a>
       <a href="main_screen.html">Home</a>
       <a href="news.html">Athletic News</a>
@@ -97,85 +96,83 @@
   <div class="section-title">RAIDER SCHEDULE</div>
 
 
-    <!-- <div class="scoreboard box live">
-      <img src="img/gate_Logo.png" alt="gate logo" width:"84" height="87">
-
-      <div class="stats">
-        <p class="sport-name">Women's Ice Hockey</p>
-        <h3 class="score">3 - 1</h3>
-        <p><span class="time-remaining">19:32</span> - <span class="period">1st Half</span></p>
-      </div>
-
-      <img src="img/cornell.png" alt="cornell logo" width:"50" height="56">
-    </div> -->
-
-    <div class="arrow_up"></div>
-    <div class="category">Recent</div>
+    <div class="category"><span class="fa fa-play"></span> Recent</div>
 
     <div class="scoreboard2">
-      <img src="img/gate_Logo.png" alt="Home Team" />
+      <div class="gateImage">
+        <img src="img/gate_Logo_crop.png" alt="Home Team" />
+      </div>
       <div class="stats">
         <p class="sport-name">Women's Lacrosse</p>
-        <h3 class="score">3 - 1</h3>
-        <p><span class="time-remaining">19:32</span> - <span class="period">1st Half</span></p>
+        <div class="win">W <span class="score">11 - 8</span> </div>
+        <div class="links">
+            <img src="img/Polygon.png" alt="arrow">Box Score
+            <img src="img/Polygon.png" alt="arrow">Recap
+        </div>
       </div>
-      <img src="img/cornell.png" alt="cornell logo" width:25vw>
+      <div class="opponentImage">
+        <img src="img/cornell.png" alt="Away Team logo">
+      </div>
+    </div>
+
+
+
+    <div class="category"><span class="fa fa-play"></span> Live</div>
+
+    <div class="scoreboard2 red">
+      <div class="gateImage2">
+        <img src="img/gate_Logo_crop.png" alt="Home Team" />
+      </div>
+      <div class="stats">
+        <p class="sport-name2">Men's Lacrosse</p>
+        <div class="live_score">9-5</div>
+        <div class="live_link">
+            <span class="fa fa-play"></span> LIVE STATS
+        </div>
+      </div>
+      <div class="opponentImage2">
+        <img src="img/HolyCross.png" alt="Away Team logo">
+      </div>
+    </div>
+
+    <div class="scoreboard2 red">
+      <div class="gateImage2">
+        <img src="img/gate_Logo_crop.png" alt="Home Team" />
+      </div>
+      <div class="stats">
+        <p class="sport-name2">Men's Tennis</p>
+        <div class="live_score">1-0</div>
+        <div class="live_link">
+            <span class="fa fa-play"></span> LIVE STATS
+        </div>
+      </div>
+      <div class="opponentImage2">
+        <img src="img/Lehigh.png" alt="Away Team logo">
+      </div>
+    </div>
+
+
+
+    <div class="category"><span class="fa fa-play"></span> Upcoming </div>
+
+    <div class="upcomingGame">
+      <div class="gateImage">
+        <img src="img/gate_Logo_crop.png" alt="Home Team" />
+      </div>
+      <div class="stats">
+        <p class="sport-name">Softball</p>
+        <div class="date"> April 18th 5 pm </div>
+        <div class="location"> vs. </div>
+      </div>
+      <div class="Loyola">
+        <img src="img/Loyola.png" alt="Away Team logo">
+      </div>
     </div>
 
 
 
 
-    <div class="boxes">
-        <img src="img/gate_Logo.png" alt="Home Team">
-        <div class="centerInfo">
-          <div class="sport">Women's Lacrosse</div>
 
-          <div class="middle">
-            <div class="win">W</div>
-            <div class="score">11-8</div>
-          </div>
-
-          <div class="links"><img src="img/Polygon.png" alt="arrow">Box Score <img src="img/Polygon.png" alt="arrow">Recap</div>
-        </div>
-        <div class="opponentLogo">
-          <img src="img/cornell.png" alt="cornell logo">
-        </div>
-      </div>
-
-    <div class="boxes red">
-      <div class="grid-container">
-        <div class="item1">Women's Lacrosse</div>
-        <div class="item2">
-            <img src="img/gate_Logo.png" alt="gate logo" width:"84" height="87">
-        </div>
-        <div class="item3">11-8</div>
-        <div class="item4"><img src="img/cornell.png" alt="cornell logo" width:"50" height="56"></div>
-        <div class="item5"><img src="img/Polygon.png" alt="arrow">Box Score <img src="img/Polygon.png" alt="arrow">Recap</div>
-      </div>
-    </div>
-
-    <div class="boxes">
-      <div class="grid-container">
-        <div class="item1">Women's Lacrosse</div>
-        <div class="item2">
-            <img src="img/gate_Logo.png" alt="gate logo" width:"84" height="87">
-        </div>
-        <div class="item3">11-8</div>
-        <div class="item4"><img src="img/cornell.png" alt="cornell logo" width:"50" height="56"></div>
-        <div class="item5"><img src="img/Polygon.png" alt="arrow">Box Score <img src="img/Polygon.png" alt="arrow">Recap</div>
-      </div>
-    </div>
-    <div class="boxes red">
-      <div class="grid-container">
-        <div class="item1">Women's Lacrosse</div>
-        <div class="item2">
-            <img src="img/gate_Logo.png" alt="gate logo" width:"84" height="87">
-        </div>
-        <div class="item3">11-8</div>
-        <div class="item4"><img src="img/cornell.png" alt="cornell logo" width:"50" height="56"></div>
-        <div class="item5"><img src="img/Polygon.png" alt="arrow">Box Score <img src="img/Polygon.png" alt="arrow">Recap</div>
-      </div>
-    </div>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
