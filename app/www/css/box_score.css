@@ -1,0 +1,348 @@
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+
+
+
+body{
+      background-color: #333333;
+}
+
+
+.category {
+  font-family: 'Graduate', sans-serif;
+  color: #FFFFFF;
+  font-size: 14pt;
+  padding-top: 10px;
+  padding-left:25px;
+}
+
+
+
+.scoreboard2 {
+  display: grid;
+  margin: 10px 20px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  vertical-align: middle;
+  border: 5px #FFFFFF solid;
+  border-radius: 10px;
+  background: #E5E3E3;
+}
+
+.scoreboard2 .stats {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  text-align: center;
+  padding-top: 3px;
+}
+
+.scoreboard2 .stats .score {
+  font-size: 20pt;
+  /* margin: 0px; */
+  line-height: 20pt;
+}
+
+.scoreboard2 .stats p {
+  margin: 0;
+}
+
+.scoreboard2 .gateImage img {
+  width: 23vw;
+  padding-top:15px;
+  padding-left:8px;
+  /* margin: 5px auto; */
+}
+
+.scoreboard2 .opponentImage img {
+  width: 16vw;
+  /* margin: 5px auto; */
+  padding-left:15px;
+  padding-right:12px;
+  padding-top: 20px;
+  /* padding-bottom:20px; */
+}
+
+.scoreboard2 .gateImage2 img {
+  width: 23vw;
+  padding-top:15px;
+  padding-left:12px;
+  padding-right:5px;
+  /* margin: 5px auto; */
+}
+
+.scoreboard2 .opponentImage2 img {
+  width: 16vw;
+  /* margin: 5px auto; */
+  padding-left:20px;
+  padding-right:12px;
+  padding-top: 20px;
+  /* padding-bottom:20px; */
+}
+
+.scoreboard2 .win {
+  font-family:'Amiri';
+  font-size: 48px;
+  font-weight: bold;
+  color: #862633;
+  padding-left: 10px;
+  line-height: 40px;
+}
+
+.scoreboard2 .sport-name{
+  font-family:'Amiri';
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.scoreboard2 .score {
+  font-family:'Amiri';
+  font-size: 24px;
+  float:right;
+  font-weight: normal;
+  color:black;
+  padding-left: 10px;
+  padding-top:5px;
+  padding-right: 5px;
+}
+
+.scoreboard2 .links {
+  font-family:'Amiri';
+  font-size: 16px;
+}
+
+.scoreboard2 .links img{
+  padding-left: 3px;
+  padding-right: 2px;
+  width: 3vw;
+}
+
+
+
+
+
+.red{
+    background-color: #862633;
+}
+
+.scoreboard2 .sport-name2{
+  font-family:'Amiri';
+  font-size: 18px;
+  font-weight: bold;
+  color:white;
+}
+
+.scoreboard2 .live_score {
+  font-family:'Amiri';
+  font-size: 48px;
+  font-weight: normal;
+  color: white;
+  line-height: 40px;
+}
+
+.scoreboard2 .live_link {
+  font-family:'Amiri';
+  font-size: 17px;
+  color:white;
+}
+
+
+
+
+
+.upcomingGame {
+  display: grid;
+  margin: 10px 20px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  vertical-align: middle;
+  border: 5px #FFFFFF solid;
+  border-radius: 10px;
+  background: #E5E3E3;
+}
+
+.upcomingGame .stats {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  text-align: center;
+  padding-top: 3px;
+}
+
+.upcomingGame .stats p {
+  margin: 0;
+}
+
+.upcomingGame .gateImage img {
+  width: 23vw;
+  padding-top:15px;
+  padding-left:8px;
+  padding-right:5px;
+  /* margin: 5px auto; */
+}
+
+.upcomingGame .Loyola img {
+  width: 20vw;
+  /* margin: 5px auto; */
+  padding-left:5px;
+  padding-right:12px;
+  padding-top: 20px;
+  /* padding-bottom:20px; */
+}
+
+
+.upcomingGame .date {
+  font-family:'Amiri';
+  font-size: 18px;
+  color: black;
+  padding-left: 10px;
+  line-height: 20px;
+}
+
+.upcomingGame .sport-name{
+  font-family:'Amiri';
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+.upcomingGame .location {
+  font-family:'Amiri';
+  font-size: 48px;
+  line-height: 20pt;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-top:5px;
+}
+
+
+
+
+.scoreboard2 .box_links {
+  font-family:'Amiri';
+  font-size: 16px;
+}
+
+.scoreboard2 .box_links img{
+  padding-left: 2px;
+  padding-right: 2px;
+  width: 3vw;
+}
+
+
+.scoreboard2 .box-win {
+  font-family:'Amiri';
+  font-size: 48px;
+  font-weight: bold;
+  color: #862633;
+  line-height: 40px;
+}
+
+
+.overall-box {
+  display: grid;
+  margin: 10px 20px;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto;
+  vertical-align: middle;
+  border-radius: 10px;
+  background: #E5E3E3;
+}
+
+.overall-stat{
+  text-align: center;
+  /* padding-top: 3px; */
+  font-family:'Amiri';
+  font-size: 22px;
+  /* border: .5px solid white; */
+}
+
+.light{
+    background-color: white;
+}
+
+.right-top{
+  border-top-right-radius: 10px;
+}
+
+.right-bottom{
+  border-bottom-right-radius: 10px;
+}
+
+
+.final{
+  font-weight:bold;
+}
+
+.border {
+  border-bottom: 1px solid black;
+}
+
+.border2 {
+  border-bottom: 2px solid black;
+}
+
+.team-box {
+  display: grid;
+  margin: 10px 20px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 32px 32px 32px 32px;
+  vertical-align: middle;
+  border-radius: 10px;
+  background: #E5E3E3;
+}
+
+/* .overall-box .opponentname {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  text-align: center;
+  padding-top: 3px;
+  font-family:'Amiri';
+  font-size: 22px;
+}
+
+.overall-box .homename {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  text-align: center;
+  padding-top: 3px;
+  font-family:'Amiri';
+  font-size: 22px;
+}
+
+.overall-box .toplabel1 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  text-align: center;
+  padding-top: 3px;
+  font-family:'Amiri';
+  font-size: 22px;
+}
+
+.overall-box .toplabel2 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  text-align: center;
+  padding-top: 3px;
+  font-family:'Amiri';
+  font-size: 22px;
+}
+
+.overall-box .toplabel3 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  text-align: center;
+  padding-top: 3px;
+  font-family:'Amiri';
+  font-size: 22px;
+} */
