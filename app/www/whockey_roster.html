@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/roster.css" />
+    <link rel="stylesheet" type="text/css" href="css/teams.css" />
+    <title>Women's Ice Hockey</title>
+</head>
+
+<body>
+  <!-- Header is contained in div below, I recommend keeping it collapsed. -->
+  <div>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times; </a>
+      <a href="main_screen.html">Home</a>
+      <a href="news.html">Athletic News</a>
+      <a href="Colgate_Schedule.html">Colgate Schedule</a>
+      <a href="javascript:void(0)" onclick="openInnerNav()">Team List &#9662;</a>
+      <div id="innerSidenav" class="sidenav">
+        <a href="javascript:void(0)" class="backbtn" onclick="closeInnerNav()"> &#x25c2; </a>
+        <button class="dropdown-btn">Women's Teams &#9662;</button>
+        <div class="dropdown-container">
+          <a href="#">Basketball</a>
+          <a href="#">Cross Country</a>
+          <a href="#">Field Hockey</a>
+          <a href="#">Ice Hockey</a>
+          <a href="#">Lacrosse</a>
+          <a href="#">Rowing</a>
+          <a href="#">Soccer</a>
+          <a href="#">Softball</a>
+          <a href="#">Swimming & Diving</a>
+          <a href="#">Tennis</a>
+          <a href="#">Track & Field</a>
+          <a href="#">Volleyball</a>
+        </div>
+        <button class="dropdown-btn">Men's Teams &#9662;</button>
+        <div class="dropdown-container">
+          <a href="#">Basketball</a>
+          <a href="#">Cross Country</a>
+          <a href="#">Football</a>
+          <a href="#">Golf</a>
+          <a href="#">Ice Hockey</a>
+          <a href="#">Lacrosse</a>
+          <a href="#">Rowing</a>
+          <a href="#">Soccer</a>
+          <a href="#">Swimming & Diving</a>
+          <a href="#">Tennis</a>
+          <a href="#">Track & Field</a>
+        </div>
+      </div>
+      <a href="notifications.html">Notifications</a>
+      <a href="manage_account.html"> Manage Account</a>
+    </div>
+    <div class="main-header">
+        <h1>
+          <span class = "hamburger" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+          Colgate <img class = "center" src="img/gate_logo2.png" alt="'gate logo" /> Athletics
+        </h1>
+    </div>
+  </div>
+
+  <h2 class="section-title can-favorite"> 2018 Women's Ice Hockey <span class="fa fa-star checked"></h1>
+
+  <div class="team-tabs">
+    <span> <a href="whockey_news.html"> News </a> </span>
+    <span> <a href="whockey_schedule.html"> Schedule</a> </span>
+    <span class="active">Roster</span>
+  </div>
+
+  <!--<div class="dropdown">
+    <button onclick="roster_year_fnc" class="dropbtn">2017-2018</button>
+      <div id="myDropdown" class="dropdown-content">
+    <a href="#home">2017-2018</a>
+    <a href="#about">2016-2017</a>
+    <a href="#contact">2015-2016</a>
+      </div>
+  </div>-->
+
+    <a href="player_peri.html" class="roster">
+        <div class="photo">
+            <img src="Img/donaldson_peri.jpg" alt="Peri_D">
+        </div>
+        <div class="info">
+            <h2><span class="number">1</span>Peri Donaldson</h2>
+            <h3>Freshman / Goaltender / Undeclared / Keller, Texas / St. Paul's School (N.H.)</h3>
+        </div>
+    </a>
+
+    <a href="player_olivia.html" class="roster">
+        <div class="photo">
+            <img src="Img/Zufuto_Olivia.jpg" alt="Olivia_Z">
+        </div>
+        <div class="info">
+            <h2><span class = "number">3</span>Olivia Zufuto</h2>
+            <h3>Junior / Defense / Psychology / Niagra Falls, N.Y. / Niagra Jr. Purple Eagles / Nicholas School (NAPHA)</h3>
+        </div>
+    </a>
+
+    <a href="player_kaila.html" class="roster">
+        <div class="photo">
+            <img src="Img/pinkney_kaila.jpg" alt="Kaila_P">
+        </div>
+        <div class="info">
+            <h2><span class = "number">4</span>Kaila Pinkney</h2>
+            <h3>Senior / Defense / Psychology / Denfield, Ontario / Team Canada U-18 / Bluewater Hawks (PWHL)</h3>
+        </div>
+    </a>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+
+</html>
