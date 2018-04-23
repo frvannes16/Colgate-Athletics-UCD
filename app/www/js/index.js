@@ -48,6 +48,19 @@ var app = {
     }
 };
 
+// Slider
+function nextSlide() {
+  slides[currentSlide].className = 'slide';
+  currentSlide = (currentSlide+1) % slides.length;
+  slides[currentSlide].className = 'slide showing';
+}
+var slides = document.querySelectorAll('.slide #slides');
+var currentSlide = 0;
+// If there is a slider on the page, set it up to transition between pages.
+if (slides.length > 0) {
+  var slideInterval = setInterval(nextSlide, 2000);
+}
+
 function toggleFavorite() {
   console.log("Toggling favorite");
   this.getElementsByClassName('fa-star')[0].classList.toggle('checked');
