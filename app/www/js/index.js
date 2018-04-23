@@ -48,17 +48,44 @@ var app = {
     }
 };
 
+var slideInterval;
+
+function pauseSlideshow() {
+  clearInterval(slideInterval);
+}
+
 // Slider
 function nextSlide() {
-  slides[currentSlide].className = 'slide';
-  currentSlide = (currentSlide+1) % slides.length;
-  slides[currentSlide].className = 'slide showing';
+    goToSlide(currentSlide+1);
 }
-var slides = document.querySelectorAll('.slide #slides');
+
+function previousSlide() {
+    goToSlide(currentSlide-1);
+}
+
+function goToSlide(n) {
+    slides[currentSlide].className = 'slide';
+    currentSlide = (n+slides.length)%slides.length;
+    slides[currentSlide].className = 'slide showing';
+}
+
+var slides = document.querySelectorAll('#slides .slide');
 var currentSlide = 0;
+var next;
+var previous;
 // If there is a slider on the page, set it up to transition between pages.
 if (slides.length > 0) {
-  var slideInterval = setInterval(nextSlide, 2000);
+  slideInterval = setInterval(nextSlide, 2000);
+  next = document.getElementById('next');
+  previous = document.getElementById('previous');
+  next.onclick = function() {
+    pauseSlideshow();
+    nextSlide();
+  };
+  previous.onclick = function() {
+    pauseSlideshow();
+    previousSlide();
+  }
 }
 
 function toggleFavorite() {
