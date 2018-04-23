@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+  <meta charset="utf-8" />
+
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+  <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+  <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+  <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/teams.css">
+  <link rel="stylesheet" type="text/css" href="css/news.css">
+  <title>Men's Basketball</title>
+</head>
+
+<body>
+  <!-- Header is contained in div below, I recommend keeping it collapsed. -->
+  <div>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times; </a>
+      <a href="main_screen.html">Home</a>
+      <a href="news.html">Athletic News</a>
+      <a href="Colgate_Schedule.html">Colgate Schedule</a>
+      <a href="javascript:void(0)" onclick="openInnerNav()">Team List &#9662;</a>
+      <div id="innerSidenav" class="sidenav">
+        <a href="javascript:void(0)" class="backbtn" onclick="closeInnerNav()"> &#x25c2; </a>
+        <button class="dropdown-btn">Women's Teams &#9662;</button>
+        <div class="dropdown-container">
+          <a href="#">Basketball</a>
+          <a href="#">Cross Country</a>
+          <a href="#">Field Hockey</a>
+          <a href="#">Ice Hockey</a>
+          <a href="#">Lacrosse</a>
+          <a href="#">Rowing</a>
+          <a href="#">Soccer</a>
+          <a href="#">Softball</a>
+          <a href="#">Swimming & Diving</a>
+          <a href="#">Tennis</a>
+          <a href="#">Track & Field</a>
+          <a href="#">Volleyball</a>
+        </div>
+        <button class="dropdown-btn">Men's Teams &#9662;</button>
+        <div class="dropdown-container">
+          <a href="#">Basketball</a>
+          <a href="#">Cross Country</a>
+          <a href="#">Football</a>
+          <a href="#">Golf</a>
+          <a href="#">Ice Hockey</a>
+          <a href="#">Lacrosse</a>
+          <a href="#">Rowing</a>
+          <a href="#">Soccer</a>
+          <a href="#">Swimming & Diving</a>
+          <a href="#">Tennis</a>
+          <a href="#">Track & Field</a>
+        </div>
+      </div>
+      <a href="notifications.html">Notifications</a>
+      <a href="manage_account.html"> Manage Account</a>
+    </div>
+    <div class="main-header">
+        <h1>
+          <span class = "hamburger" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+          Colgate <img class = "center" src="img/gate_logo2.png" alt="'gate logo" /> Athletics
+        </h1>
+    </div>
+  </div>
+
+    <div class="content">
+
+    <h2 class="section-title can-favorite">2018 Men's Ice Hockey <span class="fa fa-star checked"></span></h2>
+
+    <div class="team-tabs">
+      <span class="active"> News </span>
+      <span><a href="wbball_schedule.html">Schedule</a></span>
+      <span><a href="wbball_roster.html">Roster</a></span>
+    </div>
+
+    <!-- http://www.uscho.com/2018/04/18/friendship-four-2019-to-feature-colgate-new-hampshire-northeastern-and-princeton/ -->
+    <div class="news_article red">
+      <div class="article_pic"><img src="img/whockey_news1.jpg" alt="Men's Team Pic"></div>
+      <div class="article_title">Friendship Four 2019 to feature Colgate</div>
+    </div>
+
+    <!-- https://gocolgateraiders.com/news/2018/4/17/mens-ice-hockey-mens-hockey-names-captains-for-2018-19-season.aspx -->
+    <div class="news_article red">
+      <div class="article_pic"><img src="img/mhockey_captains.jpg" alt="Men's Hockey captains 2018-19"></div>
+      <div class="article_title">Men's Hockey Names Captains for 2018-19 Season</div>
+    </div>
+
+    <!-- https://gocolgateraiders.com/news/2018/3/20/academic-support-services-colgate-athletics-celebrates-another-rise-in-raider-academic-honor-roll.aspx -->
+    <div class="news_article red">
+      <div class="article_pic"><img src="img/raider_honor_roll.jpg" alt="Honor roll photo"></div>
+      <div class="article_title">Another Rise in Raider Academic Honor Roll</div>
+    </div>
+
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript">
+    app.initialize();
+  </script>
+</body>
+
+</html>
