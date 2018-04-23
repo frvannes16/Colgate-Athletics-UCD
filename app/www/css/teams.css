@@ -6,11 +6,11 @@
   display: flex;
   justify-content: space-between;
   font-family: 'Graduate', sans-serif;
-  font-size: 10pt;
+  font-size: 18px;
 }
 
 .team-tabs span {
-  padding: 5px 0;
+  padding: 2px 0;
   border-radius: 0px;
   border: solid #FFFFFF 1px;
   flex-basis: 100%;
@@ -20,15 +20,22 @@
 
 .team-tabs>span:first-of-type {
   border-radius: 7px 0px 0px 7px;
+  font-style:"Graduate";
+  font-size: 18px;
 }
+
 
 .team-tab>span:last-of-type {
   border-radius: 0px 7px 7px 0px;
+  font-style:"Graduate";
+  font-size: 18px;
 }
 
 .team-tabs span.active {
     background: #9E9E9E;
     color: #FFFFFF;
+    font-style:"Graduate";
+    font-size: 18px;
 }
 
 
