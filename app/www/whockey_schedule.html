@@ -22,12 +22,13 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="msapplication-tap-highlight" content="no" />
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
-    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
-    <!-- Good default declaration:
+  <meta charset="utf-8" />
+
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+  <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+  <!-- Good default declaration:
     * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
     * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
     * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
@@ -35,14 +36,14 @@
         * Enable eval(): add 'unsafe-eval' to default-src
     * Create your own at http://cspisawesome.com
     -->
-    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/Colgate_Schedule.css" />
-    <title>Colgate Schedule</title>
+  <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/teams.css">
+  <title>Women's Ice Hockey</title>
 </head>
 
 <body>
-  <!-- Header is below, I recommend keeping it collapsed. -->
+  <!-- Header is contained in div below, I recommend keeping it collapsed. -->
   <div>
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times; </a>
@@ -57,7 +58,7 @@
           <a href="wbball_news.html">Basketball</a>
           <a href="#">Cross Country</a>
           <a href="#">Field Hockey</a>
-          <a href="whockey_news.html">Ice Hockey</a>
+          <a href="mhockey_news.html">Ice Hockey</a>
           <a href="wlax_news.html">Lacrosse</a>
           <a href="#">Rowing</a>
           <a href="#">Soccer</a>
@@ -73,7 +74,7 @@
           <a href="#">Cross Country</a>
           <a href="#">Football</a>
           <a href="#">Golf</a>
-          <a href="mhockey_news.html">Ice Hockey</a>
+          <a href="whockey_news.html">Ice Hockey</a>
           <a href="wlax_news.html">Lacrosse</a>
           <a href="#">Rowing</a>
           <a href="#">Soccer</a>
@@ -83,7 +84,7 @@
         </div>
       </div>
       <a href="notifications.html">Notifications</a>
-      <a href="manage_account.html">Manage Account</a>
+      <a href="manage_account.html"> Manage Account</a>
     </div>
     <div class="main-header">
         <h1>
@@ -93,91 +94,72 @@
     </div>
   </div>
 
-  <div class="section-title">RAIDER SCHEDULE</div>
+    <div class="content">
 
+    <h2 class="section-title can-favorite">2018 Women's Ice Hockey <span class="fa fa-star checked"></span></h2>
 
-    <div class="category"><span class="fa fa-play"></span> Recent</div>
+    <div class="team-tabs">
+      <span> <a href="whockey_news.html"> News </a> </span>
+      <span class="active"> Schedule </span>
+      <span><a href="whockey_roster.html">Roster</a></span>
+    </div>
 
-    <div class="scoreboard2">
-      <div class="gateImage">
-        <img src="img/gate_Logo_crop.png" alt="Home Team" />
+    <div class="record">
+      <div>
+        <p>Record</p>
+        <h3>7 - 3</h3>
       </div>
-      <div class="stats">
-        <p class="sport-name">Women's Lacrosse</p>
-        <div class="win">W <span class="score">11 - 8</span> </div>
-        <div class="links">
-            <img src="img/Polygon.png" alt="arrow">Box Score
-            <img src="img/Polygon.png" alt="arrow">Recap
-        </div>
-      </div>
-      <div class="opponentImage">
-        <img src="img/cornell.png" alt="Away Team logo">
+      <div>
+        <p>Conference</p>
+        <h3>2 - 1</h3>
       </div>
     </div>
 
-
-
-    <div class="category"><span class="fa fa-play"></span> Live</div>
-
-    <div class="scoreboard2 red">
-      <div class="gateImage2">
-        <img src="img/gate_Logo_crop.png" alt="Home Team" />
-      </div>
+    <div class="scoreboard box ended">
+      <img src="img/gate_Logo.png" alt="Home Team" />
       <div class="stats">
-        <p class="sport-name2">Men's Lacrosse</p>
-        <div class="live_score">9-5</div>
-        <div class="live_link">
-            <span class="fa fa-play"></span> LIVE STATS
-        </div>
+        <p class="date">March 6th 5pm</p>
+        <h3 class="score"><span class="outcome">W</span>3 - 1</h3>
+        <p>Box Score - Recap</p>
       </div>
-      <div class="opponentImage2">
-        <img src="img/HolyCross.png" alt="Away Team logo">
-      </div>
+      <img src="img/gate_Logo.png" alt="Away Team logo">
     </div>
 
-    <div class="scoreboard2 red">
-      <div class="gateImage2">
-        <img src="img/gate_Logo_crop.png" alt="Home Team" />
-      </div>
+    <div class="scoreboard maroon-box live">
+      <img src="img/gate_Logo.png" alt="Home Team" />
       <div class="stats">
-        <p class="sport-name2">Men's Tennis</p>
-        <div class="live_score">1-0</div>
-        <div class="live_link">
-            <span class="fa fa-play"></span> LIVE STATS
-        </div>
+        <p class="date">Live Now - Live Stats</p>
+        <h3 class="score">1 - 1</h3>
+        <p><span class="time-remaining">19:32</span> - <span class="period">1st Half</span></p>
       </div>
-      <div class="opponentImage2">
-        <img src="img/Lehigh.png" alt="Away Team logo">
-      </div>
+      <img src="img/gate_Logo.png" alt="Away Team logo">
     </div>
 
-
-
-    <div class="category"><span class="fa fa-play"></span> Upcoming </div>
-
-    <div class="upcomingGame">
-      <div class="gateImage">
-        <img src="img/gate_Logo_crop.png" alt="Home Team" />
-      </div>
+    <div class="scoreboard box upcoming">
+      <img src="img/gate_Logo.png" alt="Home Team" />
       <div class="stats">
-        <p class="sport-name">Softball</p>
-        <div class="date"> April 18th 5 pm </div>
-        <div class="location"> vs. </div>
+        <p class="sport-name">April 18th 5pm</p>
+        <h3>vs.</h3>
       </div>
-      <div class="Loyola">
-        <img src="img/Loyola.png" alt="Away Team logo">
-      </div>
+      <img src="img/gate_Logo.png" alt="Away Team logo">
     </div>
 
+    <div class="scoreboard box upcoming">
+      <img src="img/gate_Logo.png" alt="Home Team" />
+      <div class="stats">
+        <p class="sport-name">April 18th 5pm</p>
+        <h3>vs.</h3>
+      </div>
+      <img src="img/gate_Logo.png" alt="Away Team logo">
+    </div>
 
+  </div>
 
-
-
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript">
-      //  app.initialize();
-    </script>
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript">
+    app.initialize();
+  </script>
 </body>
 
 </html>

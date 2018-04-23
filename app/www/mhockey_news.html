@@ -39,7 +39,9 @@
   <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/teams.css">
-  <title>Main Screen</title>
+  <link rel="stylesheet" type="text/css" href="css/news.css">
+  <link rel="stylesheet" type="text/css" href="css/slider.css">
+  <title>Men's Ice Hockey</title>
 </head>
 
 <body>
@@ -55,11 +57,11 @@
         <a href="javascript:void(0)" class="backbtn" onclick="closeInnerNav()"> &#x25c2; </a>
         <button class="dropdown-btn">Women's Teams &#9662;</button>
         <div class="dropdown-container">
-          <a href="#">Basketball</a>
+          <a href="wbball_news.html">Basketball</a>
           <a href="#">Cross Country</a>
           <a href="#">Field Hockey</a>
-          <a href="#">Ice Hockey</a>
-          <a href="#">Lacrosse</a>
+          <a href="whockey_news.html">Ice Hockey</a>
+          <a href="wlax_news.html">Lacrosse</a>
           <a href="#">Rowing</a>
           <a href="#">Soccer</a>
           <a href="#">Softball</a>
@@ -70,12 +72,12 @@
         </div>
         <button class="dropdown-btn">Men's Teams &#9662;</button>
         <div class="dropdown-container">
-          <a href="#">Basketball</a>
+          <a href="wbball_news.html">Basketball</a>
           <a href="#">Cross Country</a>
           <a href="#">Football</a>
           <a href="#">Golf</a>
-          <a href="#">Ice Hockey</a>
-          <a href="#">Lacrosse</a>
+          <a href="mhockey_news.html">Ice Hockey</a>
+          <a href="wlax_news.html">Lacrosse</a>
           <a href="#">Rowing</a>
           <a href="#">Soccer</a>
           <a href="#">Swimming & Diving</a>
@@ -96,64 +98,40 @@
 
     <div class="content">
 
-    <h2 class="section-title can-favorite">2018 Women's Ice Hockey <span class="fa fa-star checked"></span></h2>
+    <h2 class="section-title can-favorite">2018 Men's Ice Hockey <span class="fa fa-star checked"></span></h2>
 
     <div class="team-tabs">
-      <span> <a href="team_news.html"> News </a> </span>
-      <span class="active"> Schedule </span>
-      <span><a href="roster.html">Roster</a></span>
+      <span class="active"> News </span>
+      <span><a href="mhockey_schedule.html">Schedule</a></span>
+      <span><a href="mhockey_roster.html">Roster</a></span>
     </div>
 
-    <div class="record">
-      <div>
-        <p>Record</p>
-        <h3>7 - 3</h3>
-      </div>
-      <div>
-        <p>Conference</p>
-        <h3>2 - 1</h3>
-      </div>
+    <ul id="slides">
+      <button class="controls" id="previous">&lt;</button>
+      <button class="controls" id="next">&gt;</button>
+      <li class="slide showing"><img src="img/Basketball_article.png" alt="Basketball Article"><h2>Raiders Snap Streak 54 - 48 at Lehigh</h2></li>
+      <li class="slide"><img src="img/WIH_article.jpg" alt="Women's Ice Hockey Article"><h2>2 Colgate WIH players Honored</h2></li>
+      <li class="slide"><img src="img/MIH_article.jpg" alt="Men's Ice Hockey Article"><h2>Men's Hockey Falls in Game 2 at Clarkson, 3-0</h2></li>
+
+    </ul>
+
+    <!-- http://www.uscho.com/2018/04/18/friendship-four-2019-to-feature-colgate-new-hampshire-northeastern-and-princeton/ -->
+    <div class="news_article red">
+      <div class="article_pic"><img src="img/whockey_news1.jpg" alt="Men's Team Pic"></div>
+      <div class="article_title">Friendship Four 2019 to feature Colgate</div>
     </div>
 
-    <div class="scoreboard box ended">
-      <img src="img/gate_Logo.png" alt="Home Team" />
-      <div class="stats">
-        <p class="date">March 6th 5pm</p>
-        <h3 class="score"><span class="outcome">W</span>3 - 1</h3>
-        <p>Box Score - Recap</p>
-      </div>
-      <img src="img/gate_Logo.png" alt="Away Team logo">
+    <!-- https://gocolgateraiders.com/news/2018/4/17/mens-ice-hockey-mens-hockey-names-captains-for-2018-19-season.aspx -->
+    <div class="news_article red">
+      <div class="article_pic"><img src="img/mhockey_captains.jpg" alt="Men's Hockey captains 2018-19"></div>
+      <div class="article_title">Men's Hockey Names Captains for 2018-19 Season</div>
     </div>
 
-    <div class="scoreboard maroon-box live">
-      <img src="img/gate_Logo.png" alt="Home Team" />
-      <div class="stats">
-        <p class="date">Live Now - Live Stats</p>
-        <h3 class="score">1 - 1</h3>
-        <p><span class="time-remaining">19:32</span> - <span class="period">1st Half</span></p>
-      </div>
-      <img src="img/gate_Logo.png" alt="Away Team logo">
+    <!-- https://gocolgateraiders.com/news/2018/3/20/academic-support-services-colgate-athletics-celebrates-another-rise-in-raider-academic-honor-roll.aspx -->
+    <div class="news_article red">
+      <div class="article_pic"><img src="img/raider_honor_roll.jpg" alt="Honor roll photo"></div>
+      <div class="article_title">Another Rise in Raider Academic Honor Roll</div>
     </div>
-
-    <div class="scoreboard box upcoming">
-      <img src="img/gate_Logo.png" alt="Home Team" />
-      <div class="stats">
-        <p class="sport-name">April 18th 5pm</p>
-        <h3>vs.</h3>
-      </div>
-      <img src="img/gate_Logo.png" alt="Away Team logo">
-    </div>
-
-    <div class="scoreboard box upcoming">
-      <img src="img/gate_Logo.png" alt="Home Team" />
-      <div class="stats">
-        <p class="sport-name">April 18th 5pm</p>
-        <h3>vs.</h3>
-      </div>
-      <img src="img/gate_Logo.png" alt="Away Team logo">
-    </div>
-
-  </div>
 
   <script type="text/javascript" src="cordova.js"></script>
   <script type="text/javascript" src="js/index.js"></script>

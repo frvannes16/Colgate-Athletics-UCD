@@ -39,6 +39,7 @@
 
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link rel="stylesheet" type="text/css" href="css/news.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slider.css">
     <title>Colgate News</title>
 </head>
 
@@ -55,11 +56,11 @@
         <a href="javascript:void(0)" class="backbtn" onclick="closeInnerNav()"> &#x25c2; </a>
         <button class="dropdown-btn">Women's Teams &#9662;</button>
         <div class="dropdown-container">
-          <a href="#">Basketball</a>
+          <a href="wbball_news.html">Basketball</a>
           <a href="#">Cross Country</a>
           <a href="#">Field Hockey</a>
-          <a href="#">Ice Hockey</a>
-          <a href="#">Lacrosse</a>
+          <a href="whockey_news.html">Ice Hockey</a>
+          <a href="wlax_news.html">Lacrosse</a>
           <a href="#">Rowing</a>
           <a href="#">Soccer</a>
           <a href="#">Softball</a>
@@ -70,12 +71,12 @@
         </div>
         <button class="dropdown-btn">Men's Teams &#9662;</button>
         <div class="dropdown-container">
-          <a href="#">Basketball</a>
+          <a href="wbball_news.html">Basketball</a>
           <a href="#">Cross Country</a>
           <a href="#">Football</a>
           <a href="#">Golf</a>
-          <a href="#">Ice Hockey</a>
-          <a href="#">Lacrosse</a>
+          <a href="mhockey_news.html">Ice Hockey</a>
+          <a href="wlax_news.html">Lacrosse</a>
           <a href="#">Rowing</a>
           <a href="#">Soccer</a>
           <a href="#">Swimming & Diving</a>
@@ -98,11 +99,15 @@
 
   <div class="section-title">Colgate News</div>
 
-  <div class="slider_article">
-    <div class="slider_pic"><img src="img/Basketball_article.png" alt="Basketball Article"></div>
-    <div class="slider_title">Raiders Snap Streak 54 - 48 at Lehigh</div>
-  </div>
-  
+  <ul id="slides">
+    <button class="controls" id="previous">&lt;</button>
+    <button class="controls" id="next">&gt;</button>
+    <li class="slide showing"><img src="img/Basketball_article.png" alt="Basketball Article"><h2>Raiders Snap Streak 54 - 48 at Lehigh</h2></li>
+    <li class="slide"><img src="img/WIH_article.jpg" alt="Women's Ice Hockey Article"><h2>2 Colgate WIH players Honored</h2></li>
+    <li class="slide"><img src="img/MIH_article.jpg" alt="Men's Ice Hockey Article"><h2>Men's Hockey Falls in Game 2 at Clarkson, 3-0</h2></li>
+
+  </ul>
+
 
 
   <div class="section-title2">Your News</div>

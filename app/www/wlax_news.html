@@ -22,12 +22,13 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="msapplication-tap-highlight" content="no" />
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
-    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
-    <!-- Good default declaration:
+  <meta charset="utf-8" />
+
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+  <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+  <!-- Good default declaration:
     * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
     * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
     * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
@@ -35,14 +36,15 @@
         * Enable eval(): add 'unsafe-eval' to default-src
     * Create your own at http://cspisawesome.com
     -->
-    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/Colgate_Schedule.css" />
-    <title>Colgate Schedule</title>
+  <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/teams.css">
+  <link rel="stylesheet" type="text/css" href="css/news.css">
+  <title>Women's Lacrosse</title>
 </head>
 
 <body>
-  <!-- Header is below, I recommend keeping it collapsed. -->
+  <!-- Header is contained in div below, I recommend keeping it collapsed. -->
   <div>
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times; </a>
@@ -83,7 +85,7 @@
         </div>
       </div>
       <a href="notifications.html">Notifications</a>
-      <a href="manage_account.html">Manage Account</a>
+      <a href="manage_account.html"> Manage Account</a>
     </div>
     <div class="main-header">
         <h1>
@@ -93,91 +95,39 @@
     </div>
   </div>
 
-  <div class="section-title">RAIDER SCHEDULE</div>
+    <div class="content">
 
+    <h2 class="section-title can-favorite">2018 Women's Lacrosse <span class="fa fa-star checked"></span></h2>
 
-    <div class="category"><span class="fa fa-play"></span> Recent</div>
-
-    <div class="scoreboard2">
-      <div class="gateImage">
-        <img src="img/gate_Logo_crop.png" alt="Home Team" />
-      </div>
-      <div class="stats">
-        <p class="sport-name">Women's Lacrosse</p>
-        <div class="win">W <span class="score">11 - 8</span> </div>
-        <div class="links">
-            <img src="img/Polygon.png" alt="arrow">Box Score
-            <img src="img/Polygon.png" alt="arrow">Recap
-        </div>
-      </div>
-      <div class="opponentImage">
-        <img src="img/cornell.png" alt="Away Team logo">
-      </div>
+    <div class="team-tabs">
+      <span class="active"> News </span>
+      <span><a href="wlax_schedule.html">Schedule</a></span>
+      <span><a href="wlax_roster.html">Roster</a></span>
     </div>
 
-
-
-    <div class="category"><span class="fa fa-play"></span> Live</div>
-
-    <div class="scoreboard2 red">
-      <div class="gateImage2">
-        <img src="img/gate_Logo_crop.png" alt="Home Team" />
-      </div>
-      <div class="stats">
-        <p class="sport-name2">Men's Lacrosse</p>
-        <div class="live_score">9-5</div>
-        <div class="live_link">
-            <span class="fa fa-play"></span> LIVE STATS
-        </div>
-      </div>
-      <div class="opponentImage2">
-        <img src="img/HolyCross.png" alt="Away Team logo">
-      </div>
+    <!-- http://gocolgateraiders.com/news/2018/4/21/womens-lacrosse-atkinson-ties-career-high-with-four-goals-in-loss-to-no-10-loyola.aspx -->
+    <div class="news_article red">
+      <div class="article_pic"><img src="img/wlax_news1.jpg" alt="Tara Atkinson on field"></div>
+      <div class="article_title">Atkinson Ties Career-High with Four Goals</div>
     </div>
 
-    <div class="scoreboard2 red">
-      <div class="gateImage2">
-        <img src="img/gate_Logo_crop.png" alt="Home Team" />
-      </div>
-      <div class="stats">
-        <p class="sport-name2">Men's Tennis</p>
-        <div class="live_score">1-0</div>
-        <div class="live_link">
-            <span class="fa fa-play"></span> LIVE STATS
-        </div>
-      </div>
-      <div class="opponentImage2">
-        <img src="img/Lehigh.png" alt="Away Team logo">
-      </div>
+    <!-- http://www.thecolgatemaroonnews.com/csports/article_c46058b4-38e7-11e8-a319-73c59c3a8f03.html -->
+    <div class="news_article red">
+      <div class="article_pic"><img src="img/wlax_news2.png" alt="Women's lacrosse player"></div>
+      <div class="article_title">Women’s Lacrosse Defeats Boston U., Bucknell</div>
     </div>
 
-
-
-    <div class="category"><span class="fa fa-play"></span> Upcoming </div>
-
-    <div class="upcomingGame">
-      <div class="gateImage">
-        <img src="img/gate_Logo_crop.png" alt="Home Team" />
-      </div>
-      <div class="stats">
-        <p class="sport-name">Softball</p>
-        <div class="date"> April 18th 5 pm </div>
-        <div class="location"> vs. </div>
-      </div>
-      <div class="Loyola">
-        <img src="img/Loyola.png" alt="Away Team logo">
-      </div>
+    <!-- https://gocolgateraiders.com/news/2018/3/20/academic-support-services-colgate-athletics-celebrates-another-rise-in-raider-academic-honor-roll.aspx -->
+    <div class="news_article red">
+      <div class="article_pic"><img src="img/raider_honor_roll.jpg" alt="Honor roll photo"></div>
+      <div class="article_title">Another Rise in Raider Academic Honor Roll</div>
     </div>
 
-
-
-
-
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript">
-      //  app.initialize();
-    </script>
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript">
+    app.initialize();
+  </script>
 </body>
 
 </html>
