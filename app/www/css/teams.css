@@ -59,7 +59,14 @@
   border: 3px solid #9E9E9E;
   font-size: 13pt;
 }
-.record p, .record h3 {
-  margin-top: 10px;
-  margin-bottom: 10px;
+.record p {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  font-size: 18px;
+}
+
+.record h3 {
+  margin-top: 3px;
+  margin-bottom: 5px;
+  font-size: 35px;
 }
