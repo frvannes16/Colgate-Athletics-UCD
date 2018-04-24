@@ -61,6 +61,11 @@ span.number  {
     height: 113px;
 }
 
+.roster .photo {
+  padding-left: 20px;
+  padding-top: 14px;
+}
+
 .dropbtn {
     background-color: #3498DB;
     color: white;

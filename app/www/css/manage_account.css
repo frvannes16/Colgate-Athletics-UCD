@@ -1,3 +1,5 @@
+
+
 .maroon-box h1 {
   font-family: 'Graduate';
   font-size: 18px;
@@ -5,6 +7,7 @@
   margin: 0px;
   vertical-align: middle;
   display: inline-block;
+  padding-left: 0px;
 }
 
 .maroon-box img {
@@ -13,13 +16,13 @@
   margin: 0px;
   display: inline-block;
   border-radius: 50%;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .description{
     font-family:'Amiri';
     font-size: 14px;
-    padding-top: 5px;
-    padding-bottom: 5px;
     padding-left: 8px;
     color:#000000;
 }
@@ -38,6 +41,7 @@
   text-align: left;
   padding-top: 10px;
   padding-left: 8px;
+  padding-bottom: 10px;
 }
 
 .manage maroon-box {
