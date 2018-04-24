@@ -483,6 +483,14 @@ a:hover, a:active { text-decoration: none; }
   /* padding-bottom:20px; */
 }
 
+.upcomingGame .Lehigh img {
+  width: 20vw;
+  /* margin: 5px auto; */
+  padding-left:5px;
+  padding-right:12px;
+  padding-top: 20px;
+  /* padding-bottom:20px; */
+}
 
 .upcomingGame .date {
   font-family:'Amiri';
@@ -518,6 +526,15 @@ a:hover, a:active { text-decoration: none; }
 }
 
 .upcomingGame .Navy img {
+  width: 15vw;
+  /* margin: 5px auto; */
+  padding-left:20px;
+  padding-right:12px;
+  padding-top: 10px;
+  /* padding-bottom:20px; */
+}
+
+.upcomingGame .Clarkson img {
   width: 15vw;
   /* margin: 5px auto; */
   padding-left:20px;
