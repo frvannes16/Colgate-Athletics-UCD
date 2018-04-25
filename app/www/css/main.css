@@ -139,14 +139,26 @@
   /* margin: 5px auto; */
 }
 
-.scoreboard2 .Lehigh img {
-  width: 16vw;
+.scoreboard2 .Lehigh2 img {
+  width: 15vw;
   /* margin: 5px auto; */
-  padding-left:10px;
-  padding-right:15px;
+  padding-left:7px;
+  padding-right:18px;
   padding-top: 20px;
   /* padding-bottom:20px; */
 }
+
+.scoreboard2 .scoreLehigh {
+  font-family:'Amiri';
+  font-size: 24px;
+  float:right;
+  font-weight: normal;
+  color:black;
+  padding-left: 10px;
+  padding-top:5px;
+  padding-right: 5px;
+}
+
 
 
 .scoreboard2 .win {
