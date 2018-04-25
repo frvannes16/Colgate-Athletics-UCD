@@ -635,3 +635,188 @@ a:hover, a:active { text-decoration: none; }
   padding-left: 10px;
   padding-right:10px;
 }
+
+.article1{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  padding-bottom:10px;
+
+}
+
+.article2{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  padding-bottom:10px;
+}
+
+.article_name{
+  text-align:center;
+  color:white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.article_img img{
+  width: 25vw;
+}
+
+.article_img{
+  text-align:center;
+}
+
+.article_nameRoster{
+  text-align:center;
+  color:white;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: black;
+  line-height:15px;
+}
+
+.season_highs{
+  border-radius: 10px;
+  background: #E5E3E3;
+  margin: 10px 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  vertical-align: middle;
+  border: 5px #862633 solid;
+  align-items: center;
+}
+
+.highs_title{
+  font-size:18px;
+  font-family:"Graduate";
+  color: #862633;
+}
+
+.all_titles{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  text-align:center;
+}
+
+.highs_content{
+  text-align:center;
+  font-size:14px;
+  font-family:"Graduate";
+  line-height:20px;
+}
+
+.highs_content_all{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  text-align:center;
+  font-size:14px;
+  font-style:"Graduate";
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.player_box{
+  margin: 10px 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.all_text {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  text-align:center;
+}
+
+.player_name{
+  font-size:24px;
+  font-family:"Graduate";
+  color: white;
+  padding-top:10px;
+}
+
+.player_line{
+  font-size:18px;
+  font-family:"Amiri";
+  color: white;
+  line-height:25px;
+  text-align:left;
+}
+
+.top_info{
+  padding-top: 20px;
+}
+
+.bottom_info{
+  padding-bottom: 10px;
+}
+
+.player_img{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  text-align:center;
+  padding-right: 20px;
+}
+
+.player_img img {
+  width: 35vw;
+}
+
+
+.related_articles {
+  margin: 10px 20px;
+  border: 5px #FFFFFF solid;
+  border-radius: 10px;
+  background: #862633;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.article1{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  padding-bottom:10px;
+
+}
+
+.article2{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  padding-bottom:10px;
+}
+
+.article_name{
+  text-align:center;
+  color:white;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 15px;
+}
+
+.article_img img{
+  width: 25vw;
+}
+
+.article_img{
+  text-align:center;
+}
