@@ -148,6 +148,15 @@
   /* padding-bottom:20px; */
 }
 
+.scoreboard2 .Bucknell2 img {
+  width: 20vw;
+  /* margin: 5px auto; */
+  padding-left:0px;
+  padding-right:12px;
+  padding-top: 7px;
+  /* padding-bottom:20px; */
+}
+
 .scoreboard2 .scoreLehigh {
   font-family:'Amiri';
   font-size: 24px;
