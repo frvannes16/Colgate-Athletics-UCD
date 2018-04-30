@@ -99,6 +99,17 @@ for (var i = 0; i < favoritable.length; i++) {
   favoritable[i].addEventListener("click", toggleFavorite);
 }
 
+// Find all share buttons and add their click listener.
+var pageTitleToShare = document.getElementsByClassName('section-title')[0];
+function shareListener() {
+  navigator.share("Check it out at http://www.gocolgateraiders.com", pageTitleToShare, "plain/text");
+}
+
+var shareBtn = document.querySelector('#share');
+if (shareBtn != null) {
+  shareBtn.addEventListener("click", shareListener);
+}
+
 
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
