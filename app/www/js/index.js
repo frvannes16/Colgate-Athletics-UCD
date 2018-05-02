@@ -115,9 +115,8 @@ if (shareBtn != null) {
 
 var drawerLinks = document.querySelectorAll('.dropdown-container a');
 const drawerLinksLen = drawerLinks.length;
-console.log(drawerLinksLen);
+
 for (var i = 0; i < drawerLinksLen; i++) {
-  console.log(drawerLinks[i].getAttribute("href"));
   if (drawerLinks[i].getAttribute("href") == "#") {
     drawerLinks[i].classList.toggle('inactive');
   }
