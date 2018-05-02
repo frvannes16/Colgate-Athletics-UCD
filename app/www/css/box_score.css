@@ -160,3 +160,8 @@ body{
   border-radius: 10px;
   background: #E5E3E3;
 }
+
+.livestream {
+  /* text-decoration: line-through; */
+  text-decoration: line-through;
+}
