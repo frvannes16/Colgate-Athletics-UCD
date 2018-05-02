@@ -17,35 +17,35 @@
  * under the License.
  */
 var app = {
-    // Application Constructor
-    initialize: function() {
-        this.bindEvents();
-    },
-    // Bind Event Listeners
-    //
-    // Bind any events that are required on startup. Common events are:
-    // 'load', 'deviceready', 'offline', and 'online'.
-    bindEvents: function() {
-        document.addEventListener('deviceready', this.onDeviceReady, false);
-    },
-    // deviceready Event Handler
-    //
-    // The scope of 'this' is the event. In order to call the 'receivedEvent'
-    // function, we must explicitly call 'app.receivedEvent(...);'
-    onDeviceReady: function() {
-        app.receivedEvent('deviceready');
-    },
-    // Update DOM on a Received Event
-    receivedEvent: function(id) {
-        var parentElement = document.getElementById(id);
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
+  // Application Constructor
+  initialize: function() {
+    this.bindEvents();
+  },
+  // Bind Event Listeners
+  //
+  // Bind any events that are required on startup. Common events are:
+  // 'load', 'deviceready', 'offline', and 'online'.
+  bindEvents: function() {
+    document.addEventListener('deviceready', this.onDeviceReady, false);
+  },
+  // deviceready Event Handler
+  //
+  // The scope of 'this' is the event. In order to call the 'receivedEvent'
+  // function, we must explicitly call 'app.receivedEvent(...);'
+  onDeviceReady: function() {
+    app.receivedEvent('deviceready');
+  },
+  // Update DOM on a Received Event
+  receivedEvent: function(id) {
+    var parentElement = document.getElementById(id);
+    var listeningElement = parentElement.querySelector('.listening');
+    var receivedElement = parentElement.querySelector('.received');
 
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
+    listeningElement.setAttribute('style', 'display:none;');
+    receivedElement.setAttribute('style', 'display:block;');
 
-        console.log('Received Event: ' + id);
-    }
+    console.log('Received Event: ' + id);
+  }
 };
 
 var slideInterval;
@@ -56,17 +56,17 @@ function pauseSlideshow() {
 
 // Slider
 function nextSlide() {
-    goToSlide(currentSlide+1);
+  goToSlide(currentSlide + 1);
 }
 
 function previousSlide() {
-    goToSlide(currentSlide-1);
+  goToSlide(currentSlide - 1);
 }
 
 function goToSlide(n) {
-    slides[currentSlide].className = 'slide';
-    currentSlide = (n+slides.length)%slides.length;
-    slides[currentSlide].className = 'slide showing';
+  slides[currentSlide].className = 'slide';
+  currentSlide = (n + slides.length) % slides.length;
+  slides[currentSlide].className = 'slide showing';
 }
 
 var slides = document.querySelectorAll('#slides .slide');
@@ -101,6 +101,7 @@ for (var i = 0; i < favoritable.length; i++) {
 
 // Find all share buttons and add their click listener.
 var pageTitleToShare = document.getElementsByClassName('section-title')[0];
+
 function shareListener() {
   navigator.share("Check it out at http://www.gocolgateraiders.com", pageTitleToShare, "plain/text");
 }
@@ -110,24 +111,36 @@ if (shareBtn != null) {
   shareBtn.addEventListener("click", shareListener);
 }
 
+// Gray out inactive links in the drawer menu. Any link with href="#" is greyed out.
+
+var drawerLinks = document.querySelectorAll('.dropdown-container a');
+const drawerLinksLen = drawerLinks.length;
+console.log(drawerLinksLen);
+for (var i = 0; i < drawerLinksLen; i++) {
+  console.log(drawerLinks[i].getAttribute("href"));
+  if (drawerLinks[i].getAttribute("href") == "#") {
+    drawerLinks[i].classList.toggle('inactive');
+  }
+}
+
 
 function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("innerSidenav").style.width = "0";
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("innerSidenav").style.width = "0";
 }
 
 function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("innerSidenav").style.width = "0";
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("innerSidenav").style.width = "0";
 }
 
 function closeInnerNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("innerSidenav").style.width = "0";
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("innerSidenav").style.width = "0";
 }
 
 function openInnerNav() {
-    document.getElementById("innerSidenav").style.width = "250px";
+  document.getElementById("innerSidenav").style.width = "250px";
 }
 
 /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
@@ -146,7 +159,7 @@ for (var i = 0; i < dropdown.length; i++) {
 }
 
 function roster_year_fnc() {
-    document.getElementById("roster_year").classList.toggle("show");
+  document.getElementById("roster_year").classList.toggle("show");
 }
 
 // Close the dropdown if the user clicks outside of it
